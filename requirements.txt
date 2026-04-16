@@ -1,1 +1,9 @@
-
+# Consciousness Studies v7 - Required Dependencies
+numpy>=1.24.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+pymc>=5.0.0
+arviz>=0.16.0
+seaborn>=0.12.0
+jupyter>=1.0.0
+ipykernel>=6.0.0
