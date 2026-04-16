@@ -51,6 +51,7 @@ python consciousness_v7_simulation.py
 The figures will be generated in the `figures/` folder.
 
 Contact / 聯絡方式
+
 Author / 作者: freedomizedsystemsltd@gmail.com
 
 License / 授權
