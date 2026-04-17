@@ -90,8 +90,6 @@
 <p>
 \[ \hat{C} = \begin{pmatrix} G_0 + k P & 0 \\ 0 & 0 \end{pmatrix} \]
 
-    $$ \hat{C} = \begin{pmatrix} G_0 + k P & 0 \\ 0 & 0 \end{pmatrix} $$
-
 \[ C_i = |\alpha_i|^2 (G_0 + k P) \times W_i \times K_i \times G_{p,i} \times v_i \times (1 + \alpha M_i) / (R_i - f H_i) \]
 </p>
       <h4 style="text-align: left;">意識公式參數對照表</h4>
@@ -297,14 +295,24 @@
 </p>
 <p>與 IIT 的 (\Phi) 動態對應。</p>
 <p><strong>推導 7：隨機擴展（Langevin 方程）</strong></p>
-<p>[ dC = \left[ \cdots \right] dt + \sigma C , dW ]</p>
+<p>
+    \[ dC = \left[ \cdots \right] dt + \sigma C , dW \]
+</p>
 <p><strong>推導 8：最優控制路徑</strong></p>
-<p>使用 Pontryagin 最大值原理，最優策略為初期高 (k) + 中期高 (v)。</p>
+<p>
+    \[使用 Pontryagin 最大值原理，最優策略為初期高 (k) + 中期高 (v)。\]
+</p>
 <p><strong>推導 9：多體均場模型</strong></p>
-<p>引入序參數 (r)，同步臨界 (\eta_c)，集體意識呈超線性湧現。</p>
+<p>
+    \[引入序參數 (r)，同步臨界 (\eta_c)，集體意識呈超線性湧現。\]
+</p>
 <p><strong>推導 10：全息多尺度模型</strong></p>
-<p>嵌套層級 (s=0) 至 (s=S)，自相似尺度關係：</p>
-<p>[ C^{(s+1)} \approx \lambda , C^{(s)} (1 + \gamma_h \log(1+r^{(s)})) ]</p>
+<p>
+    \[嵌套層級 (s=0) 至 (s=S)，自相似尺度關係：\]
+</p>
+<p>
+    \[ C^{(s+1)} \approx \lambda , C^{(s)} (1 + \gamma_h \log(1+r^{(s)})) \]
+</p>
 <h3>開放宇宙擴展</h3>
 <p>開放系統動態生成速率：</p>
 <p>
@@ -320,12 +328,12 @@
 <h3>數值模擬驗證、參數校準與圖表分析</h3>
 <p><strong>1. 數值模擬方法</strong></p>
 <p>
-  \[為確保數值結果的穩定性與可重現性，本研究採用四階 Runge-Kutta
+  為確保數值結果的穩定性與可重現性，本研究採用四階 Runge-Kutta
   方法（RK4）作為主要積分器，並結合自適應步長控制。核心微分方程組（包含
-  (C(t))、(M(t))、(P(t)) 及記憶累積動態）以時間步長初始值 (\Delta t_0 = 0.5)
+  \(C(t))、(M(t))、(P(t)\) 及記憶累積動態）以時間步長初始值 \(\Delta t_0 = 0.5\)
   進行積分，誤差容忍度設為
-  (10^{-6})。當局部截斷誤差超過閾值時，步長自動減半；當誤差低於 (10^{-8})
-  時，步長自動加倍。\]
+  \(10^{-6}\)。當局部截斷誤差超過閾值時，步長自動減半；當誤差低於 \(10^{-8}\)
+  時，步長自動加倍。
 </p>
 <p>
   <strong>步長敏感性測試</strong>：\[我們分別測試了固定步長 Euler 法（(\Delta t =
