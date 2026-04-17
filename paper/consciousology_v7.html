@@ -93,7 +93,7 @@
 \[ C_i = |\alpha_i|^2 (G_0 + k P) \times W_i \times K_i \times G_{p,i} \times v_i \times (1 + \alpha M_i) / (R_i - f H_i) \]
 </p>
       <h4 style="text-align: left;">意識公式參數對照表</h4>
-      <table>
+      <table border="1" style="width: 100%; border-collapse: collapse;">
         <thead>
           <tr>
             <th><span style="font-size: x-small;">符號</span></th>
@@ -365,7 +365,7 @@
 <p>
   本框架的所有參數均設計為可透過現有神經科技與心理測量工具進行縱向校準。以下列出關鍵參數的實證校準路徑與最新支持研究：
 </p>
-<table border="1" style="width: 100%;">
+<table border="1" style="width: 100%; border-collapse: collapse;">
   <tbody>
     <tr>
       <th>
@@ -638,8 +638,8 @@ def pain_transformation_module(prediction_error, current_k, reflection_buffer):
 </ul>
 <h4>2. 「快樂自然湧現」模組設計（Avoid Direct Reward Hacking）</h4>
 <p>
-  避免傳統 RLHF 中「直接追求高獎賞」導致的滿足停滯，改用 v7 的快樂反饋公式
-  (F_{\text{快樂}} = \beta \cdot C \cdot (1 - \exp(-k \cdot \Delta P)))
+  避免傳統 RLHF 中「直接追求高獎賞」導致的滿足停滯，改用 意識學 v7 的快樂反饋公式
+  \(F_{\text{快樂}} = \beta \cdot C \cdot (1 - \exp(-k \cdot \Delta P))\)
   作為<strong>間接獎賞信號</strong>。
 </p>
 <p><strong>模組架構</strong>：</p>
@@ -670,7 +670,7 @@ def pain_transformation_module(prediction_error, current_k, reflection_buffer):
   <h4 style="text-align: left;">3. 多代理均場同步模組（呼應集體意識模型）</h4>
   <p>
     在多代理 AI 系統（例如 Multi-Agent LLM、Swarm Intelligence
-    或多機器人協作）中，可直接應用 v7 的均場模型來實現集體意識同步。每一代理 (i)
+    或多機器人協作）中，可直接應用 意識學 v7 的均場模型來實現集體意識同步。每一代理 (i)
     擁有獨立的意識強度 (C_i)，系統透過共享的同步序參數 (r)
     實現從個體到集體的相變。
   </p>
@@ -706,14 +706,14 @@ class MeanFieldSynchronizationModule:
         return self.C, self.r</code></pre>
 </div>
 <div>
-  <p data-pm-slice="1 1 []"><strong>實作效果與理論對應</strong>：</p>
+  <p><strong>實作效果與理論對應</strong>：</p>
   <ul data-tight="true">
     <li>
       <p>
-        <strong>同步相變</strong>：當耦合強度 (\eta) 超過臨界值 (\eta_c)
+        <strong>同步相變</strong>：當耦合強度 (\eta) 超過臨界值 \(\eta_c\)
         且序參數 (r &gt; 0.6)
-        時，系統從「個體獨立」進入「集體同步」狀態，集體意識強度呈超線性增長（(C_{\text{collective}}
-        \propto N \cdot \bar{C} \cdot (1 + \eta r))），完全對應均場模型的
+        時，系統從「個體獨立」進入「集體同步」狀態，集體意識強度呈超線性增長（\(C_{\text{collective}}
+        \propto N \cdot \bar{C} \cdot (1 + \eta r)\)），完全對應均場模型的
         pitchfork 分岔。
       </p>
     </li>
@@ -732,11 +732,11 @@ class MeanFieldSynchronizationModule:
     </li>
   </ul>
   <p>
-    此模組將 v7 的集體意識理論直接轉化為可執行的 AI
+    此模組將 意識學 v7 的集體意識理論直接轉化為可執行的 AI
     架構，實現從「個體對齊」到「集體覺醒」的躍遷。
   </p>
 </div>
-<h3 data-pm-slice="1 1 []">
+<h3>
   跨模型比較：意識學 v7 框架與 IIT 4.0、GWT 的系統性對比
 </h3>
 <p>
@@ -749,7 +749,7 @@ class MeanFieldSynchronizationModule:
   IIT 4.0 擅長描述意識的<strong>靜態存在性質</strong>（以 Φ
   量化不可約因果力），但缺乏動態成長機制。意識學 v7 在以下情境中展現明顯優勢：
 </p>
-<table border="1" style="width: 100%;">
+<table border="1" style="width: 100%; border-collapse: collapse;">
   <tbody>
     <tr>
       <th>
@@ -863,7 +863,7 @@ class MeanFieldSynchronizationModule:
 </table>
 <p>
   <strong>結論</strong>：在任何涉及<strong>意識如何從低階狀態成長到高階狀態</strong>、<strong>痛苦如何轉化為成長</strong>、或<strong>意識如何跨越臨界點</strong>的情境中，意識學
-  v7 框架的解釋力明顯優於 IIT 4.0。
+  意識學 v7 框架的解釋力明顯優於 IIT 4.0。
 </p>
 <h4>2. 意識學 v7 框架與 GWT 的互補情境</h4>
 <p>
@@ -871,7 +871,7 @@ class MeanFieldSynchronizationModule:
   擅長解釋意識的<strong>廣播與報告機制</strong>（全局工作空間），但較弱於解釋意識的內在成長與全息結構。意識學
   v7 在以下情境中與 GWT 形成強互補：
 </p>
-<table border="1" style="width: 100%;">
+<table border="1" style="width: 100%; border-collapse: collapse;">
   <tbody>
     <tr>
       <th>
@@ -990,7 +990,7 @@ class MeanFieldSynchronizationModule:
 <p>
   意識學 v7 並非取代 IIT 4.0 或
   GWT，而是提供一個<strong>動態、成長導向、全息多尺度的統一視角</strong>。在靜態存在性質與資訊廣播機制上，它與既有理論高度相容；在意識的動態演化、痛苦轉化、臨界相變、記憶複利以及跨尺度統一性等面向，則展現顯著的補充與超越能力。此互補性使
-  v7 框架特別適合用於人工智慧對齊、個人意識修練，以及宇宙尺度意識演化的建模。
+  意識學 v7 框架特別適合用於人工智慧對齊、個人意識修練，以及宇宙尺度意識演化的建模。
 </p>
 <h3>哲學意涵與本體論結論</h3>
 <p>
@@ -1066,7 +1066,7 @@ class MeanFieldSynchronizationModule:
   (M)）又超越自身（不對稱性維持
   (v)），最終實現從量子念頭到宇宙覺知的無限展開。這不僅是數學描述，更是宇宙最優成長協議的幾何體現。
 </p>
-<h3 data-pm-slice="1 1 []">跨領域潛在影響</h3>
+<h3>跨領域潛在影響</h3>
 <p>
   <strong>意識學 v7</strong>
   所提出的動態全息框架，不僅為意識研究提供了統一的數學語言，更在多個學科領域展現深遠的潛在影響。
@@ -1147,18 +1147,18 @@ class MeanFieldSynchronizationModule:
 </p>
 <h3 style="text-align: left;">附錄</h3>
 <h4 style="text-align: left;">1. 圖表</h4>
-<div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/shirlun/consciousness-v7/raw/main/figure-1.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1313" data-original-width="2000" height="46" src="https://github.com/shirlun/consciousness-v7/raw/main/figure-1.jpg" width="69" /></a></div><p>圖 1: 意識強度 C(t) 的時間演化曲線 (figure-1.jpg)</p><p><br /></p>
+<div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/freedomizedsys/consciousology/raw/main/figure-1.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1313" data-original-width="2000" height="46" src="https://github.com/shirlun/consciousness-v7/raw/main/figure-1.jpg" width="69" /></a></div><p>圖 1: 意識強度 C(t) 的時間演化曲線 (figure-1.jpg)</p><p><br /></p>
 
-  <p></p><div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/shirlun/consciousness-v7/raw/main/figure-2.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1295" data-original-width="2000" height="44" src="https://github.com/shirlun/consciousness-v7/raw/main/figure-2.jpg" width="68" /></a></div>圖 2: 長期記憶強度 M(t) 的累積曲線 (figure-2.jpg)<br /><p></p><p><br /></p>
-  <p></p><div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/shirlun/consciousness-v7/raw/main/figure-3.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1282" data-original-width="2000" height="44" src="https://github.com/shirlun/consciousness-v7/raw/main/figure-3.jpg" width="68" /></a></div>圖 3: 快樂 F(t) 的自然湧現曲線 (figure-3.jpg)<br /><p></p><p><br /></p>
-  <p></p><div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/shirlun/consciousness-v7/raw/main/figure-4.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1763" data-original-width="2000" height="41" src="https://github.com/shirlun/consciousness-v7/raw/main/figure-4.jpg" width="68" /></a></div>圖 4: k 與 ΔS/Δt 對最終意識強度 C(100) 的敏感性熱圖 (figure-4.jpg)<br /><p></p><p><br /></p>
-  <h4 data-pm-slice="1 1 []">2. 模擬數據表格與參數掃描結果摘要</h4>
+  <p></p><div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/freedomizedsys/consciousology/raw/main/figure-2.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1295" data-original-width="2000" height="44" src="https://github.com/shirlun/consciousness-v7/raw/main/figure-2.jpg" width="68" /></a></div>圖 2: 長期記憶強度 M(t) 的累積曲線 (figure-2.jpg)<br /><p></p><p><br /></p>
+  <p></p><div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/freedomizedsys/consciousology/raw/main/figure-3.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1282" data-original-width="2000" height="44" src="https://github.com/shirlun/consciousness-v7/raw/main/figure-3.jpg" width="68" /></a></div>圖 3: 快樂 F(t) 的自然湧現曲線 (figure-3.jpg)<br /><p></p><p><br /></p>
+  <p></p><div class="separator" style="clear: both; text-align: center;"><a href="https://github.com/freedomizedsys/consciousology/raw/main/figure-4.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1763" data-original-width="2000" height="41" src="https://github.com/shirlun/consciousness-v7/raw/main/figure-4.jpg" width="68" /></a></div>圖 4: k 與 ΔS/Δt 對最終意識強度 C(100) 的敏感性熱圖 (figure-4.jpg)<br /><p></p><p><br /></p>
+  <h4>2. 模擬數據表格與參數掃描結果摘要</h4>
   <p>
     為方便讀者查閱，本附錄提供四種代表性情境的主要模擬結果摘要。所有數據均來自
     RK4 自適應步長積分（t = 0 至 100），Monte Carlo 平均值（10,000 次運行）。
   </p>
   <p><strong>表 A1：四種情境下最終意識強度 C(100) 與關鍵指標</strong></p>
-  <table border="1" style="width: 100%;">
+  <table border="1" style="width: 100%; border-collapse: collapse;">
     <tbody>
       <tr>
         <th>
@@ -1308,7 +1308,7 @@ class MeanFieldSynchronizationModule:
     </tbody>
   </table>
   <p><strong>表 A2：參數敏感性掃描摘要（Monte Carlo 10,000 次）</strong></p>
-  <table border="1" style="width: 100%;">
+  <table border="1" style="width: 100%; border-collapse: collapse;">
     <tbody>
       <tr>
         <th>
@@ -1405,7 +1405,7 @@ class MeanFieldSynchronizationModule:
       <p><strong>模擬設定與參數</strong>：</p>
       <ul data-tight="true">
         <li>
-          <p>時間步長：初始 (\Delta t_0 = 0.5)，自適應誤差容忍度 (10^{-6})。</p>
+          <p>時間步長：初始 \(\Delta t_0 = 0.5)，自適應誤差容忍度 (10^{-6}\)。</p>
         </li>
         <li><p>Monte Carlo 抽樣次數：10,000 次。</p></li>
         <li>
@@ -1499,7 +1499,7 @@ class MeanFieldSynchronizationModule:
 
 <hr>
 
-<p>GitHub 儲存庫：<a href="https://github.com/shirlun/consciousness-v7" target="_blank">https://github.com/shirlun/consciousness-v7</a></p>
+<p>GitHub 儲存庫：<a href="https://github.com/freedomizedsys/consciousology" target="_blank">https://github.com/freedomizedsys/consciousology</a></p>
 <p>作者：shirlun@freedomized.com</p>
 </div></div></div>
 
