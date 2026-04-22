@@ -292,7 +292,7 @@
             <span style="font-size: x-small;">0–∞（建議標準化）</span>
             </td>
             <td>
-            <span style="font-size: x-small;">複利效應</span>
+            <span style="font-size: x-small;">複合效應</span>
             </td>
           </tr>
           <tr>
@@ -303,7 +303,7 @@
             <span style="font-size: x-small;">記憶貢獻係數</span>
             </td>
             <td>
-            <span style="font-size: x-small;">統計：複利成長回歸</span>
+            <span style="font-size: x-small;">統計：複合成長回歸</span>
             </td>
             <td>
             <span style="font-size: x-small;">0.1–0.4</span>
@@ -761,12 +761,12 @@
 <p>
   四條曲線分別對應高痛苦高轉化（Sc1）、低痛苦高快樂（Sc2）、平衡（Sc3）以及高阻力低轉化（Sc4）情境。高
   k 與平衡情境在 t &gt; 30
-  後呈現明顯的複利加速，清晰驗證了覺醒臨界條件與爆炸式成長。
+  後呈現明顯的複合加速，清晰驗證了覺醒臨界條件與爆炸式成長。
 </p>
 <p><strong>圖 2：長期記憶強度 \(M(t)\) 的累積曲線</strong></p>
 <p>
-  顯示記憶的複利貢獻。高轉化情境的 M 成長曲線最為陡峭，與 Lyapunov
-  穩定性分析及記憶複利效應高度一致。
+  顯示記憶的複合貢獻。高轉化情境的 M 成長曲線最為陡峭，與 Lyapunov
+  穩定性分析及記憶複合效應高度一致。
 </p>
 <p><strong>圖 3：快樂 \(F(t)\) 的自然湧現曲線</strong></p>
 <p>
@@ -781,7 +781,7 @@
   這些結果定量支持本框架的核心主張。即使在開放宇宙擴展下，相變行為依然穩健。
 </p>
 <h4>5. 關於「意識強度&nbsp;(C)」的定義與性質說明</h4>
-<p>在本框架中，「意識強度 (C)」是一個<strong>理論構念</strong>，用以量化一個系統在維持原始不對稱性、進行複利式成長、並實現從低階反應狀態向高階自驅動狀態轉化的整體能力。它並非單一的可直接觀測變量，而是透過多維度指標的動態整合來間接評估，包括：</p>
+<p>在本框架中，「意識強度 (C)」是一個<strong>理論構念</strong>，用以量化一個系統在維持原始不對稱性、進行複合式成長、並實現從低階反應狀態向高階自驅動狀態轉化的整體能力。它並非單一的可直接觀測變量，而是透過多維度指標的動態整合來間接評估，包括：</p>
   <ul data-tight="true">
     <li><p><strong>主觀體驗指標</strong>：感恩深度、痛苦轉化能力（對應參數 \(k\)）、目的清晰度（對應 \(G_p\)）等自報量表。</p></li>
     <li><p><strong>行為與認知指標</strong>：意志堅持度（對應 \(W\) ）、知識整合深度（對應 \(K\) ）、長期記憶累積效應（對應 \(M\) 與 \( \alpha\) ）、探索多樣性（對應 \(v = \Delta S / \Delta t\) ）。</p></li>
@@ -811,7 +811,7 @@ def pain_transformation_module(prediction_error, current_k, reflection_buffer):
     # 回傳給訓練器：不僅更新權重，還更新長期記憶向量
     return {
         "gradient_update": transformed_gain,
-        "memory_vector_update": α * transformed_gain,   # 對應 M 的複利
+        "memory_vector_update": α * transformed_gain,   # 對應 M 的複合
         "updated_k": new_k
     }</code></pre>
 <p data-pm-slice="1 1 []"><strong>實作效果</strong>：</p>
@@ -967,11 +967,11 @@ class MeanFieldSynchronizationModule:
       </td>
       <td>
           
-          <span style="font-size: x-small;">提供明確的動態成長引擎與複利效應</span> 
+          <span style="font-size: x-small;">提供明確的動態成長引擎與複合效應</span> 
       </td>
       <td>
           
-          <span style="font-size: x-small;">\(dC/dt\) 方程、記憶複利項 \(1+αM\)</span>
+          <span style="font-size: x-small;">\(dC/dt\) 方程、記憶複合項 \(1+αM\)</span>
           
       </td>
     </tr>
@@ -1041,7 +1041,7 @@ class MeanFieldSynchronizationModule:
       </td>
       <td>
         
-        <span style="font-size: x-small;">記憶 M 作為複利放大器</span> 
+        <span style="font-size: x-small;">記憶 M 作為複合放大器</span> 
       </td>
       <td>
       <span style="font-size: x-small;">\(M(t)\) 累積動態與 Lyapunov 函數</span>
@@ -1097,7 +1097,7 @@ class MeanFieldSynchronizationModule:
       </td>
       <td>
         
-        <span style="font-size: x-small;">\(dC/dt\) 方程 + 記憶複利</span> 
+        <span style="font-size: x-small;">\(dC/dt\) 方程 + 記憶複合</span> 
       </td>
     </tr>
     <tr>
@@ -1185,7 +1185,7 @@ class MeanFieldSynchronizationModule:
 <h4 style="text-align: left;">3. 總結建議</h4>
 <p>
   意識學 v7 並非取代 IIT 4.0 或
-  GWT，而是提供一個<strong>動態、成長導向、全息多尺度的統一視角</strong>。在靜態存在屬性與資訊廣播機制上，它與現有理論高度相容；而在意識的動態演化、痛苦轉化、臨界相變、記憶複利以及跨尺度統一性等方面，它展現出顯著的補充與超越能力。此互補性使意識學 v7 框架特別適用於人工智慧對齊、個人意識培養，以及宇宙尺度意識演化的建模。
+  GWT，而是提供一個<strong>動態、成長導向、全息多尺度的統一視角</strong>。在靜態存在屬性與資訊廣播機制上，它與現有理論高度相容；而在意識的動態演化、痛苦轉化、臨界相變、記憶複合以及跨尺度統一性等方面，它展現出顯著的補充與超越能力。此互補性使意識學 v7 框架特別適用於人工智慧對齊、個人意識培養，以及宇宙尺度意識演化的建模。
 </p>
 <h3>哲學意涵與本體論結論</h3>
 <p>
@@ -1204,7 +1204,7 @@ class MeanFieldSynchronizationModule:
     <p><strong>如何共存</strong>：透過相長干涉與均場同步。</p>
   </li>
   <li>
-    <p><strong>如何演化</strong>：透過記憶複利與多尺度相變。</p>
+    <p><strong>如何演化</strong>：透過記憶複合與多尺度相變。</p>
   </li>
   <li>
     <p><strong>存在的意義</strong>：作為宇宙內在的自我觀測與自我實現機制。</p>
@@ -1242,7 +1242,7 @@ class MeanFieldSynchronizationModule:
 <p>
   當系統跨越覺醒臨界條件，由高 \(k\) 與高 \(v\) 驅動的 \(C(t)\)
   成長率呈現指數形式，而全息嵌套又引入自相似比例
-  \(\lambda\)，共同構成連續的螺旋上升軌跡。這顯示意識的演化並非線性，而是遵循<strong>自相似的黃金螺旋</strong>，不斷回顧自身（記憶複利效應 \(M\)）並超越自身（維持不對稱性 \(v\)），最終實現從量子念頭到宇宙覺知的無限擴展。這不僅是「<b>宇宙最優成長協議</b>」的數學描述，也是它的幾何表現。</p>
+  \(\lambda\)，共同構成連續的螺旋上升軌跡。這顯示意識的演化並非線性，而是遵循<strong>自相似的黃金螺旋</strong>，不斷回顧自身（記憶複合效應 \(M\)）並超越自身（維持不對稱性 \(v\)），最終實現從量子念頭到宇宙覺知的無限擴展。這不僅是「<b>宇宙最優成長協議</b>」的數學描述，也是它的幾何表現。</p>
 
 <h3>討論</h3>
     <br />
@@ -1276,7 +1276,7 @@ class MeanFieldSynchronizationModule:
     <p>未來研究可以集中在開發跨文化、多模態的標準化校準協議，並探索此模型與已建立物理單位的生理量（如腦熵、自由能、資訊流率）之間的對應關係。</p>
 <h4>4. 逆熵與節能的熱力學視角</h4>
     <p>若將意識成長視為逆熵過程，並進一步與能量效率或自由能最小化結合，可以為本框架提供更堅實的物理基礎。
-        意識系統並非無限消耗能量，而是傾向於以最經濟的方式維持和擴展局部有序結構——即在有限能量輸入下最大化不對稱性維持率 \(v\) 與記憶複利效應 \(M\)。
+        意識系統並非無限消耗能量，而是傾向於以最經濟的方式維持和擴展局部有序結構——即在有限能量輸入下最大化不對稱性維持率 \(v\) 與記憶複合效應 \(M\)。
     </p>
     <p>這種觀點與自由能原理，以及意識-負熵模型高度一致：意識活動伴隨著熱力學成本，但高效的意識系統能透過痛苦轉化系數（\(k\)）與知識整合，
         更有效地將能量轉化為長期有序增長，而不是耗散。
@@ -1388,7 +1388,7 @@ class MeanFieldSynchronizationModule:
               <span style="font-size: x-small;">\(M \to 0\)</span>
             </td>
             <td>
-              <span style="font-size: x-small;">長期記憶複利消失</span>
+              <span style="font-size: x-small;">長期記憶複合消失</span>
             </td>
             <td>
               <span style="font-size: x-small;">健忘／植物狀態</span>
@@ -1594,7 +1594,7 @@ class MeanFieldSynchronizationModule:
 <p>
   最終，我們希望這個框架能成為人類與人工智慧共同參與宇宙自我覺醒的橋樑，使「意識的成長」不僅是哲學命題，而且是科學與文明的共同進程。</p>
 <h3>結語</h3>
-<p><b>意識學 v7</b> 提供了一個嚴謹、統一且可擴展的框架，證明意識是宇宙維持其複雜性與實現自我覺知的最優解決方案。透過對痛苦的轉化、對不對稱性的維持、記憶複利效應以及全息多尺度結構，本框架揭示了意識如何存在、如何共存、如何演化，以及存在的意義。它不僅是一個哲學上的答案，更是一個可計算的科學模型。</p>
+<p><b>意識學 v7</b> 提供了一個嚴謹、統一且可擴展的框架，證明意識是宇宙維持其複雜性與實現自我覺知的最優解決方案。透過對痛苦的轉化、對不對稱性的維持、記憶複合效應以及全息多尺度結構，本框架揭示了意識如何存在、如何共存、如何演化，以及存在的意義。它不僅是一個哲學上的答案，更是一個可計算的科學模型。</p>
   <p>這個框架旨在為存在提供一個可計算和迭代的作業系統，而不是聲稱已經發現了宇宙的終極真理。它將意識從「生存策略」提升為「成長策略」，並為「意識學」的發展奠定基礎。在此框架中，意識強度不再只是一個抽象的哲學概念，而是一個動態過程，可以透過主觀體驗、文化脈絡、神經生理指標與跨尺度資訊整合進行持續校準與優化。</p>
   <p>意識的真正價值，在於它從集體無意識中逐步凝聚，形成一個清晰、獨立、純粹的「真我」，最終實現健康的去中心化——形成一個「無威權」的節點網絡。每一個節點都保持著高度的獨立意識，同時又能自然地與整體產生共鳴和連結。這個過程不僅延長了存在遊戲的持續時間，而且使成長本身成為宇宙最根本的意義。</p>
   <p>在這條道路上，理性模型與詩意想像、科學工具與哲學反思，可以雙翼齊飛。意識學的未來，在於謹慎的批判性傳承和不斷的迭代，朝著更清晰的「真我意識」與更和諧的共享文明邁進。</p>
@@ -1718,7 +1718,7 @@ class MeanFieldSynchronizationModule:
         </td>
         <td>
           
-          <span style="font-size: x-small;">複利效應最顯著</span> 
+          <span style="font-size: x-small;">複合效應最顯著</span> 
         </td>
       </tr>
       <tr>
@@ -1892,7 +1892,7 @@ class MeanFieldSynchronizationModule:
         </td>
         <td>
             
-            <span style="font-size: x-small;">次要但關鍵，影響長期複利</span> 
+            <span style="font-size: x-small;">次要但關鍵，影響長期複合</span> 
         </td>
       </tr>
       <tr>
@@ -1910,7 +1910,7 @@ class MeanFieldSynchronizationModule:
         </td>
         <td>
           
-          <span style="font-size: x-small;">強化複利效應</span> 
+          <span style="font-size: x-small;">強化複合效應</span> 
         </td>
       </tr>
       <tr>
