@@ -758,98 +758,66 @@
         empirical neuroscience.
       </p>
 
+      <h4>3. Graphical Analysis</h4>
+      <p>
+        Four representative scenarios were simulated to evaluate the model's
+        behavior, supplemented by sensitivity heatmaps to explore the parameter
+        space. The simulation results are summarized below.
+      </p>
+      <h4></h4>
+      <p>
+        <strong>Figure 1:&nbsp;</strong
+        ><b>Temporal Evolution of Consciousness Intensity&nbsp;\(C(t)\)</b>
+      </p>
+      <p>
+        The four trajectories represent distinct regimes: High Pain/High
+        Conversion (Sc1), Low Pain/High Happiness (Sc2), Dynamic Equilibrium
+        (Sc3), and High Resistance/Low Conversion (Sc4). Notably, both the
+        high-\( k \) and equilibrium scenarios exhibit a significant compounding
+        acceleration for \( t &gt; 30 \). This trend empirically validates the
+        awakening critical condition and the transition into an explosive growth
+        phase.
+      </p>
+      <p>
+        <b
+          >Figure 2: Accumulation Dynamics of Long-term Memory
+          Intensity&nbsp;</b
+        ><b>\(M(t)\)</b>
+      </p>
+      <p></p>
+      <p>
+        This figure illustrates the nonlinear compounding effect inherent in
+        memory retention. The growth rate of \( M(t) \) is most pronounced in
+        high-conversion scenarios, showing high consistency with the Lyapunov
+        stability analysis and the theoretical framework of memory-driven
+        compounding.
+      </p>
+      <p>
+        <b
+          >Figure 3: Spontaneous Emergence of Happiness \(
+          F_{\text{happiness}}(t) \)</b
+        >
+      </p>
+      <p>
+        The results show that happiness increases significantly only when \( k
+        \) is high and \( \Delta P \) is substantial. This reinforces the core
+        thesis that "happiness is an emergent consequence of growth rather than
+        a primary driving factor."
+      </p>
+      <p>
+        <b
+          >Figure 4: Sensitivity Heatmap of \( k \) and \( v \) (\( \Delta
+          S/\Delta t \)) against Final Intensity \( C(100) \)</b
+        >
+      </p>
+      <p>
+        The color gradient identifies \( k &gt; 0.6 \) as a critical growth
+        threshold. This confirms that the efficiency of pain conversion and the
+        asymmetry maintenance rate serve as the primary strategic levers for
+        consciousness evolution.
+      </p>        
             
-        <h4>4. Numerical simulation methods</h4>
-        <p>To verify the framework&#39;s dynamic behavior and predictive capabilities, 
-        we employ the explicit Euler forward integration method to numerically solve 
-        the core differential equations. The simulation settings are as follows:
-        </p>
-        <ul data-tight="true">
-          <li>
-          <p><strong>Numerical method: </strong>First-order explicit Euler method, 
-          time step \(\Delta t = 1\) (Unit is any time step). </p>
-          </li>
-          <li>
-          <p><strong>Simulation duration: </strong>\( t \in [0, 100] \), there are 
-          a total of 100 time steps.</p>
-          </li>
-          <li>
-          <p>
-          <strong>Initial conditions:</strong></p>
-          <ul data-tight="true">
-            <li>
-            <p>\( C(0) = 0.1 \)</p>
-            </li>
-            <li>
-            <p>\( M(0) = 0.0 \)</p>
-            </li>
-            <li>
-            <p>\( P(0) = P_0 \) (Set to 1.0, 4.0, or 8.0 depending on the context)</p>
-            </li>
-          </ul>
-          </li>
-          <li>
-          <p><strong>Memory accumulation dynamics: </strong>\( \frac{dM}{dt} = \lambda_{\text{mem}} 
-          \cdot C \), where \(\lambda_{\text{mem}} = 0.01\) (Benchmark value).</p>
-          </li>
-          <li>
-          <p><strong>Pain relief updates: </strong>\( P(t) = P_0 \exp(-\gamma_{\text{pain}} 
-          t) \), natural relief rate \( \gamma_{\text{pain}} = 0.05 \)</p>
-          </li>
-        </ul>
-        <p><b>Step size sensitivity test</b>: We tested three step sizes: \(\Delta 
-        t = 0.5, 1.0, 2.0\). The results show that when \(\Delta t \leq 1.0\), the 
-        relative error between the \(C(t)\) and \(M(t)\) curves is less than 1.5%, 
-        confirming good numerical stability. For high-k scenarios (strong nonlinear 
-        regions), it is recommended to use a more stable Runge-Kutta 4th order method 
-        or an adaptive step size integrator in future studies.</p>
-        <p><strong>Parameter scan range:</strong></p>
-        <ul data-tight="true">
-          <li>
-          <p>Pain conversion efficiency \(k\) : 0.1 ~ 1.0 (step size 0.05)</p>
-          </li>
-          <li>
-          <p>Asymmetry maintenance rate \(v = \Delta S / \Delta t\) : 0.01 ~ 0.1 
-          (step size 0.005)</p>
-          </li>
-          <li>
-          <p>Initial pain intensity \(P_0\) : 1.0 ~ 8.0</p>
-          </li>
-          <li>
-          <p>Resistance \( R \) : 0.5 ~ 3.0</p>
-          </li>
-        </ul>
-        <p>Four representative scenarios were simulated, 
-        and sensitivity heatmaps were generated. The simulation results for the 
-        four scenarios are shown below; please refer to the appendix for the images.</p>
-        <p><strong>Figure 1: </strong><strong>Time evolution curve of Consciousness 
-        Intensity</strong><strong> \(C(t)\)</strong></p>
-        <p>The four curves correspond to the scenarios of 
-        high pain and high conversion (Sc1), low pain and high pleasure (Sc2), balance 
-        (Sc3), and high resistance and low conversion (Sc4), respectively. The high 
-        k and balance scenarios show a significant acceleration of compound interest 
-        after t &gt; 30, clearly verifying the awakening critical condition and explosive 
-        growth.</p>
-        <p><strong>Figure 2: </strong><strong>Cumulative curve of Long-term memory
-        </strong><b>Intensity\(M(t)\)</b></p>
-        <p>This demonstrates the compounding effect of memory. 
-        The M-growth curve is steepest in high-conversion scenarios, which is highly 
-        consistent with Lyapunov stability analysis and the compounding effect of 
-        memory.</p>
-        <p><strong>Figure 3: The spontaneous emergence curve of Happiness</strong><strong> 
-        \(F(t)\)</strong></p>
-        <p>Happiness only increases significantly when k 
-        is high and ΔP is large, verifying that &quot;happiness is a natural consequence 
-        rather than a driving factor&quot;.</p>
-        <p><b>Figure 4: Sensitivity heatmap of k and ΔS/Δt to final consciousness 
-        intensity \(C(100)\)</b></p>
-        <p>The color gradient indicates that k &gt; 0.6 is the 
-        growth threshold, confirming that the efficiency of pain conversion and 
-        the rate of asymmetry maintenance are key levers.</p>
-        <p>These results quantitatively support the core claims of this framework. 
-        Phase transition behavior remains robust even under an expanded open universe.</p>
-        <h4></h4>
-        <p>
+      <p>
         5. Definition and properties of &quot;Consciousness Intensity (C)&quot;</p>
         <h4></h4>
         <p>
