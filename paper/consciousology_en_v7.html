@@ -1718,17 +1718,17 @@ class MeanFieldSynchronizationModule:
       </p>
             
       <h4>
-        6. Precise Modeling of Low-Consciousness States: Continuous Spectrum
-          and Stability Analysis
+        6. Precise Modeling of Low-Consciousness States: Continuous Spectrum and
+        Stability Analysis
       </h4>
       <p>
-      Building upon the multi-agent dynamic damping and retro-entropy efficiency
-      above, this framework further provides a precise model for
-      low-consciousness states. Unconscious or low-consciousness states
-      naturally correspond to stable states where the consciousness intensity \(
-      C \) approaches an extremely low value (\( C \approx 0 \)). The dynamic
-      generation rate approaches zero when any one or more of the following
-      conditions are met:
+        Building upon multi-agent dynamic damping and negentropy efficiency,
+        this framework provides a formal model for low-consciousness states.
+        These states—characterized by unconsciousness or diminished
+        awareness—correspond to stable regimes where Consciousness Intensity (\(
+        C \)) asymptotically approaches a minimal value (\( C \approx 0 \)). The
+        dynamic generation rate converges toward zero when one or more of the
+        following boundary conditions are met:
       </p>
       <p>
         $$ \frac{dC}{dt} \approx 0 \quad \text{when } k \to 0,, v \to 0,, M \to
@@ -1736,8 +1736,7 @@ class MeanFieldSynchronizationModule:
         \times v \times (1 + \alpha \cdot M) $$
       </p>
       <p>
-        <strong>Boundary Conditions and Phenomenological Correspondence</strong
-        >:
+        <strong>Boundary Conditions and Phenomenological Correspondence</strong>
       </p>
       <table border="1" style="border-collapse: collapse; width: 100%;">
         <tbody>
@@ -1749,131 +1748,123 @@ class MeanFieldSynchronizationModule:
               <span style="font-size: x-small;">Mechanism</span>
             </th>
             <th>
-              
-                <span style="font-size: x-small;"
-                  >Phenomenological Correspondence</span
-                >
-              
+              <span style="font-size: x-small;"
+                >Phenomenological Correspondence</span
+              >
             </th>
           </tr>
           <tr>
             <td>
-              <span style="font-size: x-small;">( k \to 0 )</span>
+              <span style="font-size: x-small;">\( k \to 0 \)</span>
             </td>
             <td>
-              
-                <span style="font-size: x-small;"
-                  >Pain transformation efficiency → 0</span
-                >
-             
+              <span style="font-size: x-small;"
+                >Vanishing pain transformation efficiency</span
+              >
             </td>
             <td>
-             
-                <span style="font-size: x-small;"
-                  >Depression / numbness / anesthesia</span
-                >
-             
+              <span style="font-size: x-small;"
+                >Depression / Numbness / Anesthesia</span
+              >
             </td>
           </tr>
           <tr>
             <td>
-              <span style="font-size: x-small;">( v \to 0 )</span>
+              <span style="font-size: x-small;">\( v \to 0 \)</span>
             </td>
             <td>
-             
-                <span style="font-size: x-small;"
-                  >Asymmetry maintenance rate → 0</span
-                >
-             
+              <span style="font-size: x-small;"
+                >Cessation of asymmetry maintenance</span
+              >
             </td>
             <td>
-              <span style="font-size: x-small;">Deep sleep / coma</span>
+              <span style="font-size: x-small;">Deep sleep / Coma</span>
             </td>
           </tr>
           <tr>
             <td>
-              <span style="font-size: x-small;">( M \to 0 )</span>
+              <span style="font-size: x-small;">\( M \to 0 \)</span>
             </td>
             <td>
               <p>
                 <span style="font-size: x-small;"
-                  >Long-term memory compounding vanishes</span
+                  >Loss of long-term memory compounding</span
                 >
               </p>
             </td>
             <td>
-             
-                <span style="font-size: x-small;"
-                  >Amnesia / vegetative state</span
-                >
-             
+              <span style="font-size: x-small;"
+                >Amnesia / Vegetative state (UWS)</span
+              >
             </td>
           </tr>
           <tr>
             <td>
-             <span style="font-size: x-small;">( R ) dominant</span>
+              <span style="font-size: x-small;">\( R \) dominant</span>
             </td>
             <td>
-             
-                <span style="font-size: x-small;"
-                  >Resistance / damping too strong</span
-                >
-             
+              <span style="font-size: x-small;"
+                >Excessive environmental resistance / damping</span
+              >
             </td>
             <td>
-             
-                <span style="font-size: x-small;"
-                  >Environmental suppression / excessive comfort</span
-                >
-              
+              <span style="font-size: x-small;"
+                >Systemic suppression / Stagnation from excessive comfort</span
+              >
             </td>
           </tr>
         </tbody>
       </table>
+      <p><b>Stability and Continuous Spectrum Analysis</b></p>
       <p>
-        <strong>Stability Proof</strong>: Using the Lyapunov function \( V(C, M)
-        = \frac{1}{1 + \alpha M + 1/C} \), in the low-\( C \) region \( \dot{V}
-        &lt; 0 \) holds when \( kv &lt; r_c \) (critical value), proving that \(
-        C \approx 0 \) is a local attractor. The low-\( C \) region can be
-        further described by the simplified approximation:
+        Stability Proof: Utilizing the Lyapunov function \( V(C, M) = \frac{1}{1
+        + \alpha M + 1/C} \), it can be shown that in the low-\( C \) regime, \(
+        \dot{V} &lt; 0 \) holds when the product \( kv \) falls below a critical
+        threshold \( r_c \). This proves that \( C \approx 0 \) functions as a
+        local attractor. In this limit, the system can be approximated by:
       </p>
-      <p>$$ C \approx k \log(1 + M v) \quad (\text{low-}C \text{ limit}) $$</p>
+      <p>$$C \approx k \log(1 + M v) \quad (\text{low-}C \text{ limit})$$</p>
       <p>
-        This approximation ensures that the model maintains
-        <strong>continuous spectrum characteristics</strong> across the entire
-        domain: from \( C \approx 0 \) (deep unconsciousness) through a gradual
-        gradient (light sleep \( C \sim 0.1 \), REM dreaming \( C \sim 1{\sim}2
-        \)) to high wakefulness (\( C &gt; 5 \)), without introducing hard
-        thresholds.
+        This formulation ensures that the model maintains a continuous spectrum
+        across the entire domain—from deep unconsciousness (\( C \approx 0 \))
+        through gradients of light sleep (\( C \sim 0.1 \)) and REM dreaming (\(
+        C \sim 1 \text{--} 2 \)), to high-alert wakefulness (\( C &gt; 5
+        \))—without necessitating arbitrary hard thresholds.
       </p>
-      <p>
-        <strong>Numerical Simulation Validation</strong>: Using RK4 integration,
-        under conditions of low \( k/v/M \) or high \( R \), \( C \) decays to
-        \( &lt; 0.01 \) within \( t &lt; 20 \) and stabilizes. Sensitivity
-        analysis shows that once \( kv \) exceeds the critical value, the system
-        can self-drive a bootstrapping recovery toward a high-\( C \) phase
-        transition.
-      </p>
-      <p>
-        <strong>Consistency with Empirical Data</strong>: During deep sleep and
-        anesthesia, EEG δ waves dominate and frontoparietal-thalamic
-        connectivity decreases, corresponding to \( v \to 0 \) and low
-        integration (supported by studies such as Alkire et al., 2008).
-        Neuroscientific evidence indicates that consciousness exhibits a
-        continuous gradient rather than binary on/off changes. Micro-increases
-        in \( k \) (e.g., mindfulness/stimulation) or \( v \) (novel input) can
-        trigger self-driven growth from low \( C \), offering potential for
-        clinical and AI alignment applications.
-      </p>
-      <p>
-        <strong>Advantages Over Traditional Binary Theories</strong>:
-        Traditional models often impose hard thresholds and lack dynamic
-        recovery mechanisms from low \( C \) to high \( C \). This framework
-        covers the entire continuous spectrum with a single set of equations and
-        provides operable parameter diagnostic pathways, making it more suitable
-        for complex multi-agent environments and clinical translation.
-      </p>
-      <p>Detailed simulation code are provided in the appendix 4.</p>
+      <p><b>Empirical Validation and Clinical Implications</b></p>
+      <ul data-tight="true">
+        <li>
+          <p>
+            <b>Numerical Consistency</b>: RK4 integration demonstrates that
+            under low \( k/v/M \) or disproportionately high \( R \), \( C \)
+            decays and stabilizes at \( &lt; 0.01 \) within \( t &lt; 20 \).
+            Sensitivity analysis reveals that if \( kv \) exceeds the critical
+            threshold, the system initiates a self-driven "bootstrapping"
+            recovery, triggering a phase transition toward high-intensity
+            consciousness.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Alignment with Neuroscientific Data</b>: During deep sleep and
+            general anesthesia, the dominance of EEG \(\delta\) waves and
+            diminished frontoparietal-thalamic connectivity correspond to \( v
+            \to 0 \) (Alkire et al., 2008). Our model aligns with the consensus
+            that consciousness is a continuous gradient rather than a binary
+            "on/off" state.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Advantage Over Binary Theories</b>: Traditional models often rely
+            on hard-coded thresholds and lack mechanisms to explain the dynamic
+            recovery from low to high \( C \). This framework unifies the entire
+            spectrum within a single set of equations, providing operable
+            diagnostic pathways for clinical translation and AI alignment.
+          </p>
+        </li>
+      </ul>
+      <p>(Detailed simulation code is provided in Appendix 4.)</p>
 
               
          <h4>
