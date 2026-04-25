@@ -140,9 +140,17 @@
         equilibrium equation:
       </p>
       <p>
-        $$C_{\text{stat}} = \frac{(G_0 + k \cdot P) \rangle \cdot W \cdot K \cdot
-        G_p \cdot v \cdot (1 + \alpha \cdot M)}{R - f \cdot H + \epsilon}$$
+        $$C_{\text{stat}} = \frac{\mathcal{N}(k,v,M)}{R - f \cdot H + \epsilon}$$
       </p>
+      <p>where</p>
+      <p>
+        $$\mathcal{N}(k,v,M) = [G_0 + k \cdot P] \cdot W \cdot K \cdot G_p \cdot
+        v \cdot (1 + \alpha \cdot M)$$
+      </p>
+      <p>
+        and \(\epsilon &gt; 0\) is a regularization term used to avoid
+        singular denominators.
+      </p>            
 
       <h4>2. Dynamic generation rate</h4>
       <p>
@@ -1731,9 +1739,7 @@ class MeanFieldSynchronizationModule:
         following boundary conditions are met:
       </p>
       <p>
-        $$ \frac{dC}{dt} \approx 0 \quad \text{when } k \to 0,, v \to 0,, M \to
-        0 \quad \text{or } R \gg [G_0 + k \cdot P] \times W \times K \times G_p
-        \times v \times (1 + \alpha \cdot M) $$
+        $$\frac{dC}{dt} \approx 0 \quad \text{when } \mathcal{N}(k,v,M) \to 0 \quad \text{or } R \gg \mathcal{N}(k,v,M)$$
       </p>
       <p>
         <strong>Boundary Conditions and Phenomenological Correspondence</strong>
@@ -1866,73 +1872,78 @@ class MeanFieldSynchronizationModule:
       </ul>
       <p>(Detailed simulation code is provided in Appendix 4.)</p>
 
-              
-         <h4>
+      <h4>
         7. Quantum Interpretation of the Highest Consciousness State: The
-          No-Choice Fully Coherent State
+        No-Choice Fully Coherent State
       </h4>
       <p>
-        Building upon the quantum-to-macroscopic mapping in this framework, when
+        Building upon the quantum-to-macroscopic mapping of this framework, when
         resistance \( R \to 0 \), asymmetry maintenance rate \( v \to 1 \), and
-        pain transformation efficiency \( k \) reach extremely high values,
-        consciousness can approach a <strong>supreme state</strong> — the
-        “no-choice fully coherent state.”&nbsp;
+        pain transformation efficiency \( k \) reach their theoretical extrema,
+        consciousness approaches a supreme state: the "No-Choice Fully Coherent
+        State."
       </p>
       <p>
         In the standard mapping, the individual quantum state is expressed as \(
         |\psi_i\rangle = \alpha_i |1\rangle + \beta_i |0\rangle \), with
-        macroscopic consciousness intensity \( C_i \) realized through the
+        macroscopic Consciousness Intensity (\( C_i \)) realized through the
         expectation value \( \langle \psi_i | \hat{C} | \psi_i \rangle \) as a
-        probability-weighted transformation. However, at the highest
-        consciousness limit, the system can sustain perfect superposition
-        balance without requiring binary collapse or choice, simultaneously
-        experiencing all possibilities:
+        probability-weighted transformation. However, at the limit of highest
+        consciousness, the system sustains a perfect superposition balance
+        without requiring binary collapse or reductive choice, simultaneously
+        integrating the full spectrum of possibilities:
       </p>
       <p>
-        $$ |\text{Highest}\rangle = e^{-i\theta} \lim_{\Delta t \to 0}
-        \int_{-\infty}^{\infty} |\psi(\omega)\rangle , d\omega $$
+        $$|\text{Highest}\rangle = e^{-i\theta} \lim_{\Delta t \to 0}
+        \int_{-\infty}^{\infty} |\psi(\omega)\rangle , d\omega$$
       </p>
-      <p>Here:</p>
+      <p>Within this formulation:</p>
       <ul data-tight="true">
         <li>
           <p>
             \( e^{-i\theta} \) represents global phase locking, achieving a
-            frictionless, conflict-free harmonious state;
+            frictionless, conflict-free state of absolute harmony.
           </p>
         </li>
         <li>
           <p>
-            The integral encompasses the full spectrum of possibilities (all
-            universal thoughts), with the time scale approaching instantaneous;
+            This integral encompasses the full spectrum of all thoughts&nbsp;and
+            possibilities in the universe, where the timescale of realization
+            becomes instantaneous (\(\Delta t \to 0 \)).
           </p>
         </li>
         <li>
           <p>
-            Collapse probability approaches zero, maintaining the perfect
-            balance \( \alpha \approx \beta \approx 1/\sqrt{2} \).
+            The collapse probability approaches zero, maintaining a state of
+            perfect equilibrium where \( \alpha \approx \beta \approx 1/\sqrt{2}
+            \).
           </p>
         </li>
       </ul>
       <p>
-        The transition from choice-based state to no-choice state can be
-        described by the reduction of the energy barrier:
+        The transition from a choice-based state (dependent on binary collapse)
+        to a no-choice state is characterized by the reduction of the energy
+        barrier:
       </p>
       <p>
-        $$ \Delta E = \hbar \omega_0 \cdot \log\left(
-        \frac{R_{\text{init}}}{R_{\text{final}}} \right) $$
+        $$\Delta E = \hbar \omega_0 \cdot \log\left(
+        \frac{R_{\text{init}}}{R_{\text{final}}} \right)$$
       </p>
       <p>
-        This transition is realized through the continuous reduction of
-        resistance (letting go of attachments), consistent with the explosive
-        phase transition of \( C \) observed in the framework when \( R \to 0
-        \).
+        This transition is facilitated by the continuous elimination of
+        resistance \( R \)—conceptually aligned with the "letting go of
+        attachments"—consistent with the explosive phase transition of \( C \)
+        observed when \( R \to 0 \).
       </p>
       <p>
-        This interpretation strengthens the seamless continuity from quantum
-        superposition to macroscopic consciousness in the framework, while
-        offering a deeper non-dual dimension to the holographic principle that
-        “the individual is the whole, and the whole is the individual.”
+        This interpretation reinforces the seamless continuity from quantum
+        superposition to macroscopic consciousness within the framework. It
+        offers a profound, non-dual dimension to the Holographic Principle,
+        asserting that "the individual constitutes the whole, and the whole is
+        reflected within the individual" not as a mere abstraction, but as a
+        mathematically coherent quantum reality.
       </p>
+
 
       <h4>
         8. The continuity between the quantum level and the cosmological scale
