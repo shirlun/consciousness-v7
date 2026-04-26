@@ -140,7 +140,8 @@
         equilibrium equation:
       </p>
       <p>
-        $$C_{\text{stat}} = \frac{\mathcal{N}(k,v,M)}{R - f \cdot H + \epsilon}$$
+        $$C_{\text{stat}} = \frac{\mathcal{N}(k,v,M)}{R - f \cdot H +
+        \eta}$$
       </p>
       <p>where</p>
       <p>
@@ -148,9 +149,9 @@
         v \cdot (1 + \alpha \cdot M)$$
       </p>
       <p>
-        and \(\epsilon &gt; 0\) is a regularization term used to avoid
-        singular denominators.
-      </p>            
+        and \(\eta &gt; 0\) is a regularization term used to avoid singular
+        denominators.
+      </p>
 
       <h4>2. Dynamic generation rate</h4>
       <p>
@@ -171,7 +172,7 @@
       <p>
         $$F_{\text{happiness}} = \beta \cdot C(t) \cdot (1 - e^{-k \cdot \Delta
         P}), \quad \frac{dH}{dt} = F_{\text{happiness}}, \quad \frac{dR}{dt} =
-        -\beta F_{\text{happiness}}$$
+        -F_{\text{happiness}}$$
       </p>
 
       <h4>4. Quantum-to-Macroscopic Mapping</h4>
@@ -181,26 +182,31 @@
         states:
       </p>
       <p>
-        $$ |\psi_i\rangle = \alpha_i |1_i \rangle + \beta_i |0_i \rangle,
-        \quad |\alpha_i|^2 + |\beta_i|^2 = 1 $$
+        $$ |\psi_i\rangle = \alpha_i |1_i \rangle + \beta_i |0_i \rangle, \quad
+        |\alpha_i|^2 + |\beta_i|^2 = 1 $$
       </p>
       <p>
         The macroscopic Consciousness Intensity \(C_i\) is derived as the
         expectation value of the quantum observable operator \(\hat{C}\):
       </p>
       <p>
-        $$ \hat{C} = \begin{pmatrix} (G_0 + k \cdot P) &amp; \epsilon \\
-        \epsilon &amp; 0 \end{pmatrix}, \quad \langle \hat{C_i} \rangle =
-        |\alpha_i|^2 \cdot (G_0 + k \cdot P)$$
+        $$ \hat{C} = \begin{pmatrix} (G_0 + k \cdot P) &amp; \epsilon \\ \epsilon &amp; 0 \end{pmatrix}$$
       </p>
-      <p>Therefore:</p>
-      <p>$$C_i = |\alpha_i|^2 \cdot C_{\text{stat},i}$$</p>
       <p>
-        Where \( \epsilon\) represents off-diagonal coherence. \(C_i\) is proportional to \(\langle \hat{C} \rangle\),
-        representing the probability-weighted realization of cognitive
-        potential.
+        The expectation value:
+      </p>  
+      <p>
+        $$\langle \hat{C_i} \rangle = \langle \psi_i | \hat{C} | \psi_i \rangle = |\alpha_i|^2 \cdot (G_0 + k \cdot P_i) + 2 \Re(\alpha_i^* \beta_i \epsilon)$$
       </p>
-            
+      <p>Therefore, The macroscopic Consciousness Intensity is defined as:</p>
+      <p>
+        $$C_i = \langle \hat{C_i} \rangle \cdot \frac{W_i \cdot K_i \cdot G_{p,i} \cdot v_i \cdot (1 + \alpha \cdot M_i)}{R_i - f \cdot H_i + \eta}$$
+      </p>
+      <p>
+        Where \(2 \Re(\alpha_i^* \beta_i \epsilon)\) is an off-diagonal cross term, representing the coherence contribution. \(C_i\) is proportional to \(\langle \hat{C} \rangle\), representing the
+        probability-weighted realization of cognitive potential.
+      </p>
+                
       <h4>5. Parameter Reference and Operationalization</h4>
       <table border="1" style="border-collapse: collapse; width: 100%;">
         <tbody>
