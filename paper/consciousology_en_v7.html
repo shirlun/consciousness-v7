@@ -2622,15 +2622,94 @@ class MeanFieldSynchronizationModule:
         </tbody>
       </table>
 
-  <h4>2. Parameter Quantization and Calibration Methods for Inverse Entropy Efficiency</h4>
-  
- <p>To make the negentropy efficiency \(η_neg\) operable and verifiable, this framework proposes the following multi-layer quantization and calibration scheme:</p>
-  <ul><li><p><strong>Individual-level measurement (logging method)</strong><br />\(η_neg\) can be approximately estimated from the "proportion of unconscious time" and the average pain intensity P:<br />\(η_neg ≈ − (proportion of unconscious time × average P)\)<br />For example, 8 hours of sleep (where v ≈ 0) can be estimated as \(η_neg ≈ −0.005/s\).</p></li></ul>
-  <ul><li><p><strong>Neural layer surrogate indicators (EEG/fMRI)<br /></strong>\(δ_deco\) (decoherence contribution) ≈ 1 / effective decoherence timescale (estimated at the macroscopic scale as \(10^{-4} s^{-1}\));<br />\(γ_noise\) (noise contribution) ≈ θ wave power variability (σ²);<br />\(λ_sym\) (symmetric restoring power) ≈ δ/α power ratio (significantly increased during sleep);<br />\(μ_neg · P_untrans\) is estimated by the amount of untransformed residual pain (\(P_untrans = P − k·P\)).</p></li></ul>
-  <ul><li><p><strong>Calibration method</strong><br />The model parameters were fitted using the least squares method:<br />$$\hat{\eta}_{\text{neg}} = \arg\min \sum \left( C_{\text{obs}} - C_{\text{pred}} \right)^2$$<br />Calibration was performed using longitudinal sleep-wake data, anesthesia status data, etc.</p></li></ul>
-  <ul><li><p><strong>Comparison with empirical data<br /></strong>Tononi (2016)’s sleep study showed that during the non-REM phase, the Φ value (integrated information theory) was significantly reduced. The results predicted by this framework are consistent with this (\(η_neg\) dominates, C is close to 0).<br />Anesthesia studies by Alkire et al. showed that high \(δ_deco\) resulted in \(\dot{C} &lt; −0.02 s^{-1}\). This framework's predictions are consistent with this.</p></li></ul>
-  <ul><li><p><strong>Falsifiability</strong><br />If, in high-noise environments (e.g., long-term urban exposure), brain imaging fails to observe an increase in η_neg accompanied by a decrease in C, then the weights of δ_deco or γ_noise need to be adjusted. Such empirical testing can lead to iterative improvements to this framework.</p></li></ul>
+      <h4>
+        2. Parameter Quantization and Calibration Methods for Negentropy
+        Efficiency
+      </h4>
 
+      <p>
+        To make the negentropy efficiency \(\eta_{\text{neg}}\) operable
+        and verifiable, this framework proposes the following multi-layer
+        quantization and calibration scheme:
+      </p>
+      <p><strong>Individual-level measurement (logging method)</strong></p>
+      <p>An approximate estimate can be made for \(\eta_{\text{neg}}\):</p>
+      <p>
+        $$\eta_{\text{neg}} \approx - \left( \text{proportion of unconscious time} \cdot \overline{P} \right)$$
+      </p>
+      <p>
+        Where \(\overline{P}\) is the average pain intensity. For example, 8
+        hours of sleep (where \(v \approx 0\)) can be estimated as:
+        \(\eta_{\text{neg}} \approx -0.005 / s\)
+      </p>
+      <p><strong>Neural layer surrogate indicators (EEG/fMRI)</strong></p>
+      <ul data-tight="true">
+        <li>
+          <p>
+            <b>Decoherence contribution</b>: \(\delta_{\text{deco}} \approx
+            \frac{1}{T_{\text{deco}}}, \quad T_{\text{deco}} \sim 10^{-4 }
+            s^{-1}\)
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Noise contribution:</b> \(\gamma_{\text{noise}} \approx
+            \sigma^2_{\theta}\) where \(\sigma^2_{\theta}\) is the power
+            variability of the \(\theta\) wave.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Symmetric restoring power</b>: \(\lambda_{\text{sym}} \approx
+            \frac{\delta}{\alpha}\) is significantly increased during sleep.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Untransformed residual pain</b>: \(P_{\text{untrans}} = P - k
+            \cdot P\) Estimated correlation \(\eta_{\text{neg}} \cdot
+            P_{\text{untrans}}\).
+          </p>
+        </li>
+      </ul>
+      <p><b>Calibration Method</b></p>
+      <p>The least squares method was used to fit the model parameters:</p>
+      <p>
+        $$\hat{\eta}_{\text{neg}} = \arg\min_{\eta_{\text{neg}}} \sum \left(
+        C_{\text{obs}} - C_{\text{pred}} \right)^2$$
+      </p>
+      <p>
+        Calibration was performed using longitudinal sleep-wake data and
+        anesthesia status data.
+      </p>
+      <p><b>Comparison with empirical data</b></p>
+      <ul data-tight="true">
+        <li>
+          <p>
+            <b>Tononi (2016) sleep study</b>: Non-REM stage \(Phi\) value was
+            significantly reduced, consistent with the predictions in this
+            framework (\(\eta_{\text{neg}}\) dominated, \(C \to 0\)).
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Alkire et al.'s anesthesia study</b>: showed that
+            high&nbsp;\(\delta_{\text{deco}}\)&nbsp;resulted in \(\dot{C} &lt;
+            -0.02\) \(s^{-1}\), consistent with the predictions in this
+            framework.
+          </p>
+        </li>
+      </ul>
+      <p><b>Falsifiability</b></p>
+      <p>
+        If, in high-noise environments (such as long-term urban exposure), brain
+        imaging fails to observe an increase in \(\eta_{\text{neg}}\)
+        accompanied by a decrease in \(C\), then the weights of
+        \(\delta_{\text{deco}}\) or \(\gamma_{\text{noise}}\) need to be
+        adjusted. Such empirical tests can drive iterative improvements to the
+        framework.
+      </p>
+            
   <h4>3. ......</h4>
             
   <h3>Reproducibility Declaration</h3>
