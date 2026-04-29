@@ -311,14 +311,23 @@
         </li>
       </ul>
 
-      <p>為使模型閉合，定義以下公式：</p>
+      <p>考慮到習慣的影響，這裡對\(P\)、\(R\)、\(M\)進行擴展：</p>
       <p>
-        $$\frac{dP}{dt} = -\lambda C + \sigma + \kappa \cdot (1 - \text{Sat})
-        \cdot R, \quad \frac{dM}{dt} = \rho C - \delta M$$
+        $$\frac{dR}{dt} = -F_{\text{快樂}} + \rho_h \cdot (1 - \text{Sat}) \cdot
+        R_{\text{rep}} - \delta_h \cdot C$$
       </p>
       <p>
-        其中 \(\sigma\) 表示外部干擾，\(\kappa &gt; 0\)，\(\text{Sat}\)
-        表示滿意度；\(\rho\) 表示轉換率，\(\delta\) 表示遺忘率。
+        其中 \(\rho_h\) 表示習慣強化率，\(\text{Sat}\) 表示滿意度，\(
+        R_{\text{rep}} \) 表示重複率，\(\delta_h\)
+        表示消除率（有意識地打破習慣）；
+      </p>
+      <p>
+        $$\frac{dP}{dt} = -\lambda C + \sigma + R(t), \quad \frac{dM}{dt} = \rho
+        C - \delta M - R(t)$$
+      </p>
+      <p>
+        其中 \(\lambda\) 表示消除率（有意識地接受痛苦），\(\sigma\)
+        表示外部干擾；\(\rho\) 表示記憶率，\(\delta\) 表示遺忘率。
       </p>
 
       <h3>擴展推導</h3>
