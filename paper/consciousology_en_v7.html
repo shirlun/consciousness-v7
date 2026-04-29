@@ -418,15 +418,29 @@
           </p>
         </li>
       </ul>
-      <p>For the model to be closed, the following formula are defined:</p>
       <p>
-        $$\frac{dP}{dt} = -\lambda C + \sigma + \kappa \cdot (1 - \text{Sat})
-        \cdot R, \quad \frac{dM}{dt} = \rho C - \delta M$$
+        Considering the influence of habit, \(P\), \(R\), \(M\) have been
+        expanded here:
       </p>
       <p>
-        Where \(\sigma\) represents external interference, \(\kappa &gt; 0\),
-        \(\text{Sat}\) represents satisfaction; \(\rho\) represents conversion
-        rate, and \(\delta\) represents forgetting rate.
+        $$\frac{dR}{dt} = -F_{\text{快樂}} + \rho_h \cdot (1 - \text{Sat}) \cdot
+        R_{\text{rep}} - \delta_h \cdot C$$
+      </p>
+      <p>
+        Where \(\rho_h\) represents the habit reinforcement rate, \(\text{Sat}\)
+        represents the satisfaction rate, \( R_{\text{rep}} \) represents the
+        repetition rate, and \(\delta_h\) represents the elimination rate
+        (consciously breaking the habit);
+      </p>
+      <p>
+        $$\frac{dP}{dt} = -\lambda C + \sigma + R(t), \quad \frac{dM}{dt} = \rho
+        C - \delta M - R(t)$$
+      </p>
+      <p>
+        Where \(\lambda\) represents the elimination rate (conscious acceptance
+        of pain), \(\sigma\) represents external interference; \(\rho\)
+        represents the memory rate, and \(\delta\) represents the forgetting
+        rate.
       </p>
 
       <h3>Extended derivation</h3>
