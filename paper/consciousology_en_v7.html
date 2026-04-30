@@ -439,17 +439,24 @@
       </p>
       <p>
         $$\frac{dR}{dt} = -F_{\text{happiness}} + \rho_h \cdot (1 - \text{Sat})
-        \cdot R_{\text{rep}} - \delta_R \cdot C$$
+        \cdot R_{\text{rep}} - \delta_h \cdot C$$
       </p>
-      <p>$$\frac{dP}{dt} = -\lambda C + \delta_P + R(t)$$</p>
-      <p>$$\frac{dM}{dt} = \rho C - \delta_M \cdot M - R(t)$$</p>
+      <p>
+        $$\frac{dP}{dt} = -\lambda \cdot C - \delta_P \cdot P + \gamma_R \cdot
+        R(t)$$
+      </p>
+      <p>
+        $$\frac{dM}{dt} = \rho_M \cdot C - \delta_M \cdot M - \gamma_R \cdot
+        R(t)$$
+      </p>
       <p>
         Where \(\rho_h\) represents the habit reinforcement rate, \(\text{Sat}\)
-        represents the satisfaction rate, \( R_{\text{rep}} \) represents the
-        repetition rate, \(\delta_R\) represents the habit elimination rate;
-        \(\delta_P\) represents the pain elimination rate, \(\sigma\) represents
-        external random interference; \(\rho\) represents the memory formation
-        rate, and \(\delta_M\) represents the memory forgetting rate.
+        represents the satisfaction level, \( R_{\text{rep}} \) represents the
+        repetition rate, \(\delta_h\) represents the habit elimination rate;
+        \(\delta_P\) represents the pain attenuation rate, \(\gamma_R\)
+        represents the resistance coupling strength; \(\rho_M\) represents the
+        memory formation rate, and \(\delta_M\) represents the memory forgetting
+        rate.
       </p>
       <p>
         On scale \(s\), the satisfaction function \(\text{Sat}\) expands to:
@@ -484,7 +491,7 @@
         memory to more fully describe how habit reinforcement, satisfaction
         regulation, and predictive-corrective processes shape the long-term
         trajectory of conscious intensity. Within the overall framework, they
-        act as boundary correctors, preventing the system from ignoring
+        act as boundary modifiers, preventing the system from ignoring
         behavioral inertia, collapsing, or falling into trivial equilibrium, and
         provide the mathematical basis for predictive ability, error
         minimization, and phase transition behavior.
@@ -492,6 +499,7 @@
       <p>
         (For the simulation code, please see the reproducibility declaration.)
       </p>
+
             
       <h3>Extended derivation</h3>
       <h4>
