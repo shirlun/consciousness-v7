@@ -152,7 +152,7 @@
       <p>
         The temporal evolution (growth rate) of consciousness is formulated as:
       </p>
-      <p>$$\frac{dC}{dt} = M \cdot C_{\text{stat}} \cdot e^{-\gamma P(t)}$$</p>
+      <p>$$\frac{dC}{dt} = M(t) \cdot C_{\text{stat}} \cdot e^{-\gamma P(t)}$$</p>
       <p>
         Here, \(\frac{dC}{dt}\) represents the dynamic intensity of
         consciousness, which evolves over time; while \(C_{\text{stat}}\)
@@ -413,14 +413,14 @@
           </p>
         </li>
         <li>
-          <p>
+           <p>
             <b>Habitual behavior</b>: Resistance \(R\) represents the
             generalized resistance encountered by a system during its growth
             process, including external environmental friction, social
-            inhibition, and cognitive inertia caused by repetitive behaviors.
-            Pain \(P\) includes general external disturbances \(\sigma\), as
-            well as frustration and cravings caused by obstructed habitual
-            patterns.
+            inhibition, and cognitive inertia caused by repetitive behaviors;
+            Pain \(P\) includes frustration and cravings caused by the
+            obstruction of habitual patterns; and \(M\) includes the inhibition
+            of new memories by habits.
           </p>
         </li>
         <li>
@@ -439,18 +439,17 @@
       </p>
       <p>
         $$\frac{dR}{dt} = -F_{\text{happiness}} + \rho_h \cdot (1 - \text{Sat})
-        \cdot R_{\text{rep}} - \delta_h \cdot C$$
+        \cdot R_{\text{rep}} - \delta_R \cdot C$$
       </p>
-      <p>$$\frac{dP}{dt} = -\lambda C + \sigma + R(t)$$</p>
-      <p>$$\frac{dM}{dt} = \rho C - \delta M - R(t)$$</p>
+      <p>$$\frac{dP}{dt} = -\lambda C + \delta_P + R(t)$$</p>
+      <p>$$\frac{dM}{dt} = \rho C - \delta_M \cdot M - R(t)$$</p>
       <p>
         Where \(\rho_h\) represents the habit reinforcement rate, \(\text{Sat}\)
-        represents the satisfaction level, \(R_{\text{rep}} \) represents the
-        repetition rate, and \(\delta_h\) represents the elimination rate
-        (consciously breaking the habit); \(\lambda\) represents the elimination
-        rate (consciously transforming pain), \(\sigma\) represents external
-        random interference; \(\rho\) represents the memory formation rate, and
-        \(\delta\) represents the forgetting rate.
+        represents the satisfaction rate, \( R_{\text{rep}} \) represents the
+        repetition rate, \(\delta_R\) represents the habit elimination rate;
+        \(\delta_P\) represents the pain elimination rate, \(\sigma\) represents
+        external random interference; \(\rho\) represents the memory formation
+        rate, and \(\delta_M\) represents the memory forgetting rate.
       </p>
       <p>
         On scale \(s\), the satisfaction function \(\text{Sat}\) expands to:
@@ -460,7 +459,7 @@
         C^{(s)}_{\text{obs}} \big|$$
       </p>
       <p>
-        The correction gain \(\phi^{(s)} = \phi_0 \cdot (1 + \gamma_{sat} \cdot
+        The correction gain \(\phi^{(s)} = \phi_0 \cdot (1 + \gamma_{Sat} \cdot
         | \Delta e_{global} |)\) is used to adjust the impact of prediction
         error on satisfaction.
       </p>
@@ -468,7 +467,7 @@
         The predicted consciousness intensity is defined as
         \(C^{(s)}_{\text{pred}} = \Lambda^{(s)} \cdot C^{(s-1)} \cdot \big(1 +
         \gamma_h \log(1 + r^{(s)})\big)\), and the observed consciousness
-        intensity is \(C^{(s)}_{\text{obs}} \approx C^{(s)}_{(t)}\);
+        intensity is \(C^{(s)}_{\text{obs}} \approx C^{(s)}{(t)}\);
         \(\Lambda^{(s)}\) represents the projection constant, \(\gamma_h\)
         represents the entropy correction coefficient, and \(r^{(s)}\)
         represents the internal order parameter at the current scale.
