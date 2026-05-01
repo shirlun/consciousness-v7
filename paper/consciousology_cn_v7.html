@@ -315,6 +315,7 @@
       </ul>
 
       <h3>公式擴展</h3>
+    <h4>1. 擴充子系統</h4>
       <p>
         為了更真實地描繪習慣行為對意識系統的長期影響，我們擴展了
         \(R\)、\(P\)、\(M\)：
@@ -337,6 +338,7 @@
         表示痛苦衰減率，\(\gamma_R\) 表示阻力耦合強度；\(\rho_M\)
         表示記憶形成率，\(\delta_M\) 表示記憶遺忘率。
       </p>
+    <h4>2. 展開滿意度函數</h4>
       <p>在尺度 \(s\) 上，滿意度函數 \(\text{Sat}\) 展開為：</p>
       <p>
         $$\text{Sat}^{(s)} = 1 - \phi^{(s)} \cdot \big| C^{(s)}_{\text{pred}} -
@@ -353,6 +355,7 @@
         C^{(s)}{(t)}\)；\(\Lambda^{(s)}\) 表示投影常數，\(\gamma_h\)
         表示熵修正係數，\(r^{(s)}\) 表示當前尺度的內部序參量。
       </p>
+    <h4>3. 涵義</h4>
       <p>
         這使得 \(\text{Sat}\)
         能夠同時編碼預期滿足度和誤差，成為一種預測-修正機制。當預測與觀察值相符時，\(\text{Sat}
@@ -365,14 +368,14 @@
       <p>（關於模擬程式碼請見可重現聲明。）</p>
     
       <h3>擴展推導</h3>
-      <h4>推導 1：意識覺醒的臨界條件（奇點準則）</h4>
+      <h4>1. 意識覺醒的臨界條件（奇點準則）</h4>
       <p>
         當 \(M \cdot C_{\text{stat}} &gt; \gamma \cdot \frac{dP}{dt} \cdot
         e^{\gamma \cdot P(t)} \)，則 \( \frac{d^2C}{dt^2} &gt; 0
         \)，系統進入加速成長。此臨界狀態代表「痛苦的衰減速度不足以抵消意識的基線強度」，因此意識從被動存在轉變為主動進化，形成類似奇點的覺醒。
       </p>
     
-      <h4>推導 2：集體干涉</h4>
+      <h4>2. 集體干涉</h4>
       <p>兩個意識主體之間的糾纏狀態可以表述為：</p>
       <p>
         $$ |\Psi_{AB}\rangle = \frac{1}{\sqrt{2}} \left( |\psi_A\rangle \otimes
@@ -383,42 +386,42 @@
         其中 \( \phi = 0 \) 表示建設性干涉（協同作用），而 \( \phi = \pi \)
         表示破壞性干涉（不和諧作用）。此集體干涉的期望值可投影至靜態意識強度公式，形成跨個體的修正項，進一步影響動態生成率與快樂反饋。
       </p>
-      <h4>推導 3：平衡態分析</h4>
+      <h4>3. 平衡態分析</h4>
       <p>
         條件 \(\frac{dC}{dt} = 0\) 僅在 \(M = 0\) 或 \(v = 0\)
         時成立。這意味著不存在非平凡的穩態，顯示意識要麼進化要麼衰變；它不可能保持靜止狀態。
       </p>
-      <h4>推導 4： Lyapunov 穩定性分析</h4>
+      <h4>4. Lyapunov 穩定性分析</h4>
       <p>定義 Lyapunov 函數為：</p>
       <p>$$V(C,M) = \frac{1}{1+\alpha M} + \frac{1}{C}$$</p>
       <p>
         證明 \( \frac{dV}{dt} &lt; 0 \)
         建立了成長的全局吸引子，確保系統在複雜性增加的情況下具有長期穩定性。
       </p>
-      <h4>推導 5：資訊熵生產率</h4>
+      <h4>5. 資訊熵生產率</h4>
       <p>
         $$\frac{dS_{\text{info}}}{dt} = C_{\text{stat}} \cdot v^2 \cdot
         e^{-\gamma P}$$
       </p>
       <p>此生產率可作為綜合資訊理論 (IIT) 指標 \( \Phi \) 的動態相關指標。</p>
 
-      <h4>推導 6：隨機擴展（Langevin 方程式）</h4>
+      <h4>6. 隨機擴展（Langevin 方程式）</h4>
       <p>為了解釋環境波動，本模型可透過 Langevin 方程式進行擴展：</p>
       <p>$$dC = [\dots] \cdot dt + \sigma C \cdot dW$$</p>
       <p>其中 \( dW \) 表示 Wiener 過程，將隨機性引入意識軌跡。</p>
 
-      <h4>推導 7：最優控制路徑</h4>
+      <h4>7. 最優控制路徑</h4>
       <p>
         運用 Pontryagin 最大值原理，最優策略的特點是：初始階段 \( k \)
         高（優先考慮痛苦轉化），隨後是中間階段 \( v \)
         高（優先考慮不對稱維持）。
       </p>
-      <h4>推導 8：多體均場模型</h4>
+      <h4>8. 多體均場模型</h4>
       <p>
         透過引入序參量 \( r \) 和同步閾值 \( \eta_c
         \)，該模型顯示集體意識表現出超線性湧現，其中整體超越了部分的總和。
       </p>
-      <h4>推導 9：全息多尺度模型</h4>
+      <h4>9. 全息多尺度模型</h4>
       <p>對於嵌套尺度 \( s=0 \) 到 \( s=S \)，自相似關係由以下公式控制：</p>
       <p>
         $$C^{(s)} \approx \mathcal {H}^{(s)} = \Lambda^{(s)} \cdot C^{(s-1)}
@@ -651,7 +654,7 @@
       
              <p> <a href="https://github.com/freedomizedsys/consciousology/raw/main/figures/figure-1.jpg" style="clear: left; 
       display: inline; margin-bottom: 0em; margin-right: 0em;"><img border="0" data-original-height="1313" data-original-width="2000" height="76" src="https://github.com/freedomizedsys/consciousology/raw/main/figures/figure-1.jpg" width="118" /></a></p>
-      <p><b>圖 1：意識強度 \(C(t)\) 的時間演化 (figure-1.jpg)</b></p>
+      <p><b>意識強度 \(C(t)\) 的時間演化 (figure-1.jpg)</b></p>
          <p>
         四條軌跡代表不同的狀態：高痛苦/高轉化率 (Sc1)、低痛苦/高愉悅
         (Sc2)、動態平衡 (Sc3) 和高阻力/低轉換率 (Sc4)。值得注意的是，高 \(k\)
@@ -660,25 +663,25 @@
             </p>
 
               <p><a href="https://github.com/freedomizedsys/consciousology/raw/main/figures/figure-2.jpg" style="clear: left; display: inline; margin-bottom: 0em; margin-right: 0em;"><img border="0" data-original-height="1295" data-original-width="2000" height="76" src="https://github.com/freedomizedsys/consciousology/raw/main/figures/figure-2.jpg" width="118" /></a></p>
-      <p><b>圖 2：長期記憶強度 \(M(t)\) 的累積動態 (figure-2.jpg)</b></p>
+      <p><b>長期記憶強度 \(M(t)\) 的累積動態 (figure-2.jpg)</b></p>
           <p>
             此圖展示了記憶保持中固有的非線性複利效應。 \(M(t)\)
             的成長率在轉換率較高的情況下最為顯著，這與&nbsp;Lyapunov&nbsp;穩定性分析以及記憶驅動複利的理論架構高度吻合。
           </p>
               <p><a href="https://github.com/freedomizedsys/consciousology/raw/main/figures/figure-3.jpg" style="clear: left; display: inline; margin-bottom: 0em; margin-right: 0em;"><img border="0" data-original-height="1282" data-original-width="2000" height="76" src="https://github.com/freedomizedsys/consciousology/raw/main/figures/figure-3.jpg" width="118" /></a></p>
-            <p><b>圖 3：快樂的自發性湧現 \(F_{\text{快樂}}(t)\) (figure-3.jpg)</b></p>
+            <p><b>快樂的自發性湧現 \(F_{\text{快樂}}(t)\) (figure-3.jpg)</b></p>
           <p>
           結果顯示，只有當 \(k\) 值較高且 \(\Delta P\)
           值較大時，幸福感才會顯著提升。這進一步印證了「快樂是成長的湧現結果，而非主要驅動因素」這一核心論點。
           </p>
               <p><a href="https://github.com/freedomizedsys/consciousology/raw/main/figures/figure-4.jpg" style="clear: left; display: inline; margin-bottom: 0em; margin-right: 0em;"><img border="0" data-original-height="1763" data-original-width="2000" height="44" src="https://github.com/freedomizedsys/consciousology/raw/main/figures/figure-4.jpg" width="68" /></a></p>
-            <p><b>圖 4：\(k\) 和 \(v\)（\(ΔS/Δt\)）與最終強度 \(C(100)\) 的敏感性熱圖 (figure-4.jpg)</b></p>
+            <p><b>\(k\) 和 \(v\)（\(ΔS/Δt\)）與最終強度 \(C(100)\) 的敏感性熱圖 (figure-4.jpg)</b></p>
           <p>
             顏色梯度顯示 \(k &gt; 0.6\)
             為臨界增長閾值。這證實了痛苦轉化效率和不對稱維持率是意識演化的主要策略槓桿。
           </p>
           
-      <h4>4. 「意識強度&nbsp;(\(C\))」的定義與屬性</h4>
+      <h4>4. 「意識強度 (\(C\))」的定義與屬性</h4>
       <p>
         在本框架中，意識強度 (\(C\))
         被定義為一個理論構念，它量化了一個系統維持結構不對稱性、實現複合增長以及從低階反應狀態過渡到高階自驅動狀態的綜合能力。
