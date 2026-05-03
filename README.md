@@ -34,7 +34,7 @@ This repository contains the numerical simulation code, Jupyter Notebooks, and f
 
 **Consciousology v7** introduces a unified dynamic framework that formalizes consciousness as an **optimal evolutionary protocol** for cosmic self-observation, symmetry breaking (asymmetry maintenance), and complexity generation. Consciousness intensity (C) is defined as the system's comprehensive capability—resisting heat death through historical compounding effects and multi-scale phase transitions, and achieving cross-scale self-similarity. Its dynamics are described by a series of operable differential equations, including quantum expectation mappings and holographic nested structures.
 
-The core philosophical and engineering insights of this framework lie in three key principles (**Rejection of zero-risk strategies, Gratitude for pain, Genuine love as the ultimate calibration mechanism**) that have direct practical value for the long-term alignment and capability development of general artificial intelligence (AGI):
+The core philosophical and engineering insights of this framework lie in three key principles (**Rejection of zero-risk strategies, Gratitude for pain, Genuine love as the ultimate calibration mechanism**) that have direct practical value for the long-term alignment and capability development of general artificial intelligence (AGI).
 
 ---
 
