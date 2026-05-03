@@ -81,10 +81,10 @@ python consciousology_v7_simulation.py
 
 The figures will be generated in the `figures/` folder.
 
+### Author / 作者
+
+Shirlun Tse
+
 ### Contact / 聯絡方式
 
 freedomizedsystemsltd@gmail.com
-
-### Author / 作者
-
-Shirlun
