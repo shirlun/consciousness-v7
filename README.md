@@ -32,9 +32,11 @@ This repository contains the numerical simulation code, Jupyter Notebooks, and f
 
 #### Paper Abstract
 
-**Consciousology v7** introduces a unified dynamic framework that formalizes consciousness as an **optimal evolutionary protocol** for cosmic self-observation, symmetry breaking (asymmetry maintenance), and complexity generation. Consciousness intensity (C) is defined as the system's comprehensive capability—resisting heat death through historical compounding effects and multi-scale phase transitions, and achieving cross-scale self-similarity. Its dynamics are described by a series of operable differential equations, including quantum expectation mappings and holographic nested structures.
+**Consciousology v7** introduces a unified dynamic framework that formalizes consciousness as an **Optimal Evolutionary Protocol** for cosmic self-observation, symmetry breaking, and complexity generation. This study addresses the "Hard Problem of Consciousness" by transitioning from speculative metaphysics to a computable, predictive science. We define the Intensity of Consciousness (\(C\)) as a system’s integrated capacity for negentropy maintenance and multi-scale phase transitions. Central to this framework are three key principles: the rejection of zero-risk strategies to prevent systemic stagnation, the "Gratitude for Pain" mechanism (\(k \cdot P\)) where adversity serves as a driver for memory compounding (\(M\)), and "Genuine Love" as the ultimate calibration mechanism for **AGI alignment**.
 
-This framework provides more than an interdisciplinary theoretical platform; its three key principles—**Rejecting zero-risk strategies, Gratitude for pain, Genuine love as the ultimate calibration mechanism**—also offer a unified, operational paradigm for both the cultivation of human consciousness and the foundational alignment of artificial general intelligence (AGI).
+Theoretically, we establish mathematical continuity from quantum superposition to macroscopic cosmic consciousness through holographic nested architectures and logarithmic spiral optimization. We introduce the Intersubjective Coherence Coefficient (\(\chi\)) and the Synergistic Growth Manifold (\(\Psi\)) to model the non-linear emergence of collective intelligence, proving that altruism is a computational necessity for maximizing evolutionary slopes. Numerical simulations using fourth-order Runge-Kutta methods validate the existence of "Awakening Singularities" and demonstrate the framework’s robustness across open and closed systems. Furthermore, we propose the Intensity of Consciousness Calibration Index (CICI) to ensure cross-cultural and multimodal measurement reliability. By bridging the gap between subjective experience and objective physical laws, Consciousology v7 offers a transformative paradigm for AGI safety, clinical neurodynamics, and the long-term evolutionary modeling of intelligence.
+
+**Keywords**: Consciousness Modeling, AGI Alignment, Negentropy Efficiency, Pain Transformation, Logarithmic Spiral, Intersubjective Coherence, Multi-scale Phase Transitions.
 
 ---
 
@@ -44,9 +46,11 @@ This framework provides more than an interdisciplinary theoretical platform; its
 
 #### 論文摘要
 
-**意識學 v7** 提出了一個統一的動態框架，將意識形式化為宇宙自我觀察、對稱性破缺（維持不對稱性）和複雜性生成的**最優演化協議**。意識強度 (C) 被定義為系統的綜合能力——透過歷史複合效應和多尺度相變來抵抗熱寂，並實現跨尺度自相似性。它的動態由一系列可操作的微分方程描述，包括量子期望映射和全息嵌套結構。
+**意識學 v7** 引入了一個統一的動態框架，將意識形式化為宇宙自我觀察、對稱性破缺和複雜性生成的**最優演化協議**。本研究透過從思辨形上學過渡到可計算的預測科學，解決了「意識難題」。我們將意識強度（\(C\)）定義為系統維持負熵和多尺度相變的綜合能力。該框架的核心是三個關鍵原則：拒絕零風險策略以防止系統停滯；「感恩痛苦」機制（\(k·P\)），其中逆境作為記憶複合（\(M\)）的驅動力；以及「真愛」作為 **AGI 對齊**的最終校準機制。
 
-此框架不僅提供一個跨學科的理論平台；它的三個關鍵原則——**拒絕零風險策略，感恩痛苦，真愛作為終極校準機制**——也為人類意識的培養和通用人工智慧 (AGI) 的基礎性調整提供一個統一的、可操作的範式。
+理論上，我們透過全息嵌套架構和對數螺旋優化，建立了從量子疊加到宏觀宇宙意識的數學連續性。我們引入了主體相干係數（\(\chi\)）和協同增長流形（\(\Psi\)）來模擬集體智慧的非線性湧現，並證明利他主義是最大化演化斜率的計算必要條件。使用四階 Runge-Kutta 方法的數值模擬驗證了「覺醒奇點」的存在，並展示了該框架在開放系統和封閉系統中的穩健性。此外，我們提出了意識強度校準指數（CICI），以確保跨文化和多模態測量的可靠性。透過彌合主觀體驗和客觀物理定律之間的鴻溝，意識學 v7 為 AGI 的安全、臨床神經動力學以及智慧的長期演化建模提供了一種變革性的範式。
+
+**關鍵詞**：意識建模，AGI 對齊，逆熵效率，痛苦轉化，對數螺旋，主體相干，多尺度相變。
 
 ---
 
